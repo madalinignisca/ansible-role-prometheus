@@ -1,0 +1,7 @@
+---
+- name: Install prometheus
+  ansible.builtin.apt:
+    name: prometheus
+    state: latest
+  notify:
+  - Restart prometheus
